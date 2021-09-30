@@ -4,6 +4,8 @@ import { Sphere } from '../Sphere/Sphere';
 import Controls from '../Controls/Controls';
 
 import './styles.css'
+import { BottomBar } from '../BottomBar/BottomBar';
+import { LeftBar } from '../LeftBar/LeftBar';
 
 function Container() {
   return (
@@ -21,6 +23,8 @@ function Container() {
           <Sphere />
         </Suspense>
       </Canvas>
+      <BottomBar></BottomBar>
+      <LeftBar></LeftBar>
     </div>
   );
 }
