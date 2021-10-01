@@ -6,6 +6,7 @@ import Controls from '../Controls/Controls';
 import './styles.css'
 import { BottomBar } from '../BottomBar/BottomBar';
 import { LeftBar } from '../LeftBar/LeftBar';
+import { ZoomBar } from '../ZoomBar/ZoomBar';
 
 function Container() {
   return (
@@ -23,8 +24,9 @@ function Container() {
           <Sphere />
         </Suspense>
       </Canvas>
-      <BottomBar></BottomBar>
       <LeftBar></LeftBar>
+      <ZoomBar></ZoomBar>
+      <BottomBar></BottomBar>
     </div>
   );
 }
